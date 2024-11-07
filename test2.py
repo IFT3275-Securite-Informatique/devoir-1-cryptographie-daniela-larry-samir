@@ -1,5 +1,6 @@
 import random
 import unittest
+import time
 from difflib import SequenceMatcher, unified_diff
 from encrypt import *
 from student_code import decrypt  # Remplacer par le nom de la fonction de déchiffrement
