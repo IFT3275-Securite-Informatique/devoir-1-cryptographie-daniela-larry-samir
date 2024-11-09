@@ -3,7 +3,7 @@ import unittest
 import time
 from difflib import SequenceMatcher, unified_diff
 from encrypt import *
-from student_code import decrypt  # Remplacer par le nom de la fonction de déchiffrement
+from student_code import decrypt_C  # Remplacer par le nom de la fonction de déchiffrement
 
 
 def similarity_ratio(str1, str2):
@@ -68,7 +68,7 @@ class TestDecryption(unittest.TestCase):
         cryptogram = C  # Remplacer par le cryptogramme chiffré
 
         # Appeler la fonction de déchiffrement de l'étudiant
-        decrypted_message = decrypt(cryptogram)
+        decrypted_message = decrypt_C(cryptogram)
 
         # Calculer la similarité
         similarity = similarity_ratio(original_message, decrypted_message)
